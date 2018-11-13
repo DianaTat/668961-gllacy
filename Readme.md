@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Диана](https://up.htmlacademy.ru/htmlcss/23/user/668961).
-* Наставник: [Дмитрий Варганов].
+* Наставник: [Дмитрий Варганов](https://htmlacademy.ru/profile/scorn_da).
 
 ---
 
