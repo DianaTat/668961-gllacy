@@ -2,82 +2,91 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
 </head>
 
 <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a class="main-header-logo">
-                <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
-            </a>
-            <ul class="site-navigation">
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="delivery.html">Доставка и оплата</a></li>
-                <li><a href="about.html">О компании</a></li>
-            </ul>
-            <ul class="user-navigation">
-                <li class="cart-link"><a href="search.html">Поиск</a></li>
-                <li class="login-link"><a href="login.html">Вход</a></li>
-                <li class="empty-cart-link">Пусто</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
-        <h1 class="visually-hidden">Магазин мороженого GllacyShop</h1>
-        <section class="features">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <p class="features-heading">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-            <ul class="features-list">
-                <li class="features-item">
-                    <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем  технологий.</p>
-                </li>
-                <li class="features-item">
-                    <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                </li>
-                <li class="features-item">
-                    <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
-                </li>
-                <li class="features-item">
-                    <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-                </li>
-            </ul>
-        </section>
+  <header class="main-header">
+    <div class=“container”>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="about.html">О компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="search-link"><a href="search.html">Поиск</a></li>
+          <li class="login-link"><a href="login.html">Вход</a></li>
+          <li class="empty-cart-link"><a>Пусто</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div class=“container”>
+      <h1 class="visually-hidden">Магазин мороженого GllacyShop</h1>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+        <ul class="features-list">
+          <li class="features-item features-item-ice-cream">
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+            и проверенных временем технологий.
+          </li>
+          <li class="features-item features-item-cow">
+            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+            связывает долговременное сотрудничество.
+          </li>
+          <li class="features-item features-item-green">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+            дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья
+          </li>
+          <li class="features-item features-item-temp">
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+            растаять в пути и позволяет сохранить превосходный вкус.
+          </li>
+        </ul>
+      </section>
+      <section class="blog">
         <section class="news">
-            <h2 class="news-title">Новое в нашем блоге</h2>
-            <h3 class="news-link">
-                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-            </h3>
+          <h2 class="news-title">Новое в нашем блоге</h2>
+          <a class="news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </section>
         <section class="subscribe">
-            <h2 class="visually-hidden">Подписка на рассылку</h2>
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <!-- Здесь будет форма -->
-        </section>      
-    </main>
-    <footer class="main-footer">
-        <div class="footer-social">
-            <ul>
-                <li><a class="social-button" href="#">Twitter</a></li>
-                <li><a class="social-button" href="#">Instagram</a></li>
-                <li><a class="social-button" href="#">Facebook</a></li>
-                <li><a class="social-button" href="#">Vk</a></li>
-            </ul>
-        </div>    
-        <ul class="footer-menu">
-            <li class="favourite-menu-item"><a href="supply.html">Для поставщиков</a></li>
-            <li><a href="documentation.html">Наши документы</a></li>
-            <li><a href="payment.html">Счета и оплата</a></li>
-            <li><a href="eco-standards.html">Экологические стандарты</a></li>
-        </ul>
-        <div class="footer-copyright">
-            <a class="footer-logo" href="https://htmlacademy.ru">
-                <img src="img/footer-logo.svg" width="108" height="39" alt="HTML Academy">
-            </a>
-            <p>Сделано в HTML Academy &copy; 2017</p>
-        </div>
-    </footer>
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <!-- Здесь будет форма -->
+        </section>
+      </section>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class=“container”>
+      <ul class="social-buttons">
+        <li><a class="social-button social-button-twitter" href="#">Twitter</a></li>
+        <li><a class="social-button social-button-instagram" href="#">Instagram</a></li>
+        <li><a class="social-button social-button-fb" href="#">Facebook</a></li>
+        <li><a class="social-button social-button-vk" href="#">Vk</a></li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="menu-item menu-item-favourite"><a href="supply.html">Для поставщиков</a></li>
+        <li class="menu-item"><a href="documentation.html">Наши документы</a></li>
+        <li class="menu-item"><a href="payment.html">Счета и оплата</a></li>
+        <li class="menu-item"><a href="eco-standards.html">Экологические стандарты</a></li>
+      </ul>
+      <div class="footer-copyright">
+        <a class="footer-logo" href="https://htmlacademy.ru">
+          <img src="img/footer-logo.svg" width="108" height="39" alt="HTML Academy">
+        </a>
+        <p>Сделано в HTML Academy &copy; 2017</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
