@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -90,14 +93,16 @@
           <a class="news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </section>
         <section class="subscribe">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" class="subscribe-input" name="subscribe-email" id="subscribe-email" placeholder="">
-            <label class="subscribe-label" for="subscribe-email">Электронная почта</label>
-            <button class="subscribe-button" type="button">Отправить</button>
-          </form>
+          <div class="subscribe-form">
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" class="subscribe-input" name="subscribe-email" id="subscribe-email" placeholder="">
+              <label class="subscribe-label" for="subscribe-email">Электронная почта</label>
+              <button class="subscribe-button" type="button">Отправить</button>
+            </form>
+          </div>
         </section>
       </section>
     </div>
