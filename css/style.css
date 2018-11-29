@@ -5,7 +5,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400;
     color: #ffffff;
 
     background-color: #849d8f;
@@ -17,67 +16,65 @@ a {
     text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
-.main-navigation {
-    color: #ffffff;
-    background-color: #849d8f;
-}
-
 .site-navigation,
 .user-navigation,
 .sub-navigation {
     list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-link {
     font-size: 16px;
     line-height: 18px;
-    font-weight: 700px;
+    font-weight: 700;
+    color: #ffffff;
 }
 
-.site-navigation-current a {
-    color: #ffffff;
+.current {
     background-color: #d07058;
 }
 
-.user-navigation a {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 500px;
-    color: #ffffff;
-    background-color: #a1b4a9;
-}
-
-.site-navigation a:hover,
-.user-navigation a:hover,
-.user-navigation a:active {
+.site-navigation-link:hover,
+.user-navigation-link:hover,
+.user-navigation-link:active {
     color: #323232;
     background-color: #f7f6f3;
     text-decoration: none;
 }
 
-.sub-navigation a {
+.sub-navigation-link {
     font-size: 14px;
     line-height: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #323232;
     background-color: #f7f6f3;
     text-decoration: none;
 }
 
-.sub-navigation a:hover {
+.sub-navigation-link:hover {
     color: #323232;
     background-color: #fbded7;
 }
 
-.sub-navigation a:focus {
+.sub-navigation-link:focus {
     color: #323232;
     background-color: #f6b5a5;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+.user-navigation-link {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #ffffff;
 }
 
 .features {
     color: #323232;
     background-color: #f0e6ce;
-    background-image: url("img/features-bg.jpg");
+    background-image: url("../img/features-bg.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -89,20 +86,20 @@ a {
 .features b {
     font-size: 24px;
     line-height: 30px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .features-list {
     list-style: none;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .news {
     color: #323232;
     background-color: #ffffff;
-    background-image: url("img/news-bg.jpg");
+    background-image: url("../img/news-bg.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -110,14 +107,14 @@ a {
 .news-title {
     font-size: 16px;
     line-height: 22px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .news-link {
     color: #323232;
     font-size: 24px;
     line-height: 30px;
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 .subscribe {
@@ -132,21 +129,21 @@ a {
     color: #5a5a5a;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .subscribe-label {
     color: #999999;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .subscribe-button {
     color: #fefefe;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700px;
+    font-weight: 700;
     background-image: linear-gradient(90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 }
 
@@ -158,21 +155,25 @@ a {
 .menu-item {
     font-size: 13px;
     line-height: 18px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #ffffff;
     background-color: #849d8f;
+}
+
+.menu-item-favourite {
+    font-weight: 700;
 }
 
 .footer-copyright {
     font-size: 12px;
     line-height: 18px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #ffffff;
     background-color: #849d8f;
 }
 
 .contacts {
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 .contacts-time {
@@ -183,4 +184,43 @@ a {
 .contacts-phone {
     font-size: 22px;
     line-height: 24px;
+}
+
+.breadcrumbs,
+.catalog-list,
+.pagination-list {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+}
+
+.item-img {
+    border-radius: 133px;
+}
+
+.value {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.weight {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
 }
