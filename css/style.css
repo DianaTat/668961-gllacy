@@ -76,7 +76,7 @@ a {
     background-color: #f0e6ce;
     background-image: url("../img/features-bg.jpg");
     background-position: 0 0;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .visually-hidden {
@@ -223,4 +223,188 @@ h1 {
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
+}
+
+.container {
+    width: 1145px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+.main-navigation {
+    margin-bottom: 285px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.site-navigation-wrapper {
+    width: 570px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.main-header-logo {
+    width: 154px;
+    height: 64px;
+    margin-right: 25px;
+}
+
+.site-navigation {
+    margin-top: 20px;
+    padding: 0;
+    width: 400px;
+}
+
+.sub-navigation {
+    margin: 0;
+    padding: 0;
+}
+
+.user-navigation {
+    margin-top: 30px;
+    padding: 0;
+    width: 265px;
+}
+
+.features {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.features-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features-item {
+    width: 540px;
+    box-sizing: border-box;
+    padding: 20px 10px 10px 55px;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news {
+    width:560px;
+    padding: 20px 230px 20px 20px;
+    box-sizing: border-box;
+}
+
+.news-title,
+.news-link {
+    padding: 0;
+    margin: 0;
+}
+
+.subscribe {
+    width:560px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.subscribe-form {
+    padding: 30px 20px 40px;
+}
+
+.subscribe-form p {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-buttons {
+    width: 270px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu {
+    width: 370px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-copyright {
+    width: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-copyright p {
+    padding: 0;
+    margin: 0;
+}
+
+.contacts-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.breadcrumbs,
+.contacts {
+    padding: 0;
+    margin: 0;
+    width: 270px;
+}
+
+.contacts-time,
+.contacts-phone {
+    text-align: right;
+}
+
+.contacts-time {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.contacts-phone {
+    margin: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.catalog-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+    padding: 0;
+    margin: 0;
+    width: 267px;
+    position: relative;
+}
+
+.catalog-item b {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 213px;
+}
+
+.desc {
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }

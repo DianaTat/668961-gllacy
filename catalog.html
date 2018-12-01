@@ -10,54 +10,56 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class=“container”>
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
-        </a>
-        <ul class="site-navigation">
-            <li><a class="site-navigation-link current" href="catalog.html">Каталог</a>
-              <ul class="sub-navigation">
-                <li><a class="sub-navigation-link highlight" href="new.html">Новинки</a></li>
-                <li><a class="sub-navigation-link" href="cream.html">Сливочное</a></li>
-                <li><a class="sub-navigation-link" href="sherbet.html">Щербеты</a></li>
-                <li><a class="sub-navigation-link" href="fruit-ice.html">Фруктовый лёд</a></li>
-                <li><a class="sub-navigation-link" href="melorin.html">Мелорин</a></li>
+    <header class="main-header">
+        <div class="container">
+          <nav class="main-navigation">
+            <div class="site-navigation-wrapper">
+              <a class="main-header-logo">
+                <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
+              </a>
+              <ul class="site-navigation">
+                <li><a class="site-navigation-link current" href="catalog.html">Каталог</a>
+                  <ul class="sub-navigation">
+                    <li><a class="sub-navigation-link highlight" href="new.html">Новинки</a></li>
+                    <li><a class="sub-navigation-link" href="cream.html">Сливочное</a></li>
+                    <li><a class="sub-navigation-link" href="sherbet.html">Щербеты</a></li>
+                    <li><a class="sub-navigation-link" href="fruit-ice.html">Фруктовый лёд</a></li>
+                    <li><a class="sub-navigation-link" href="melorin.html">Мелорин</a></li>
+                  </ul>
+                </li>
+                <li><a class="site-navigation-link" href="delivery.html">Доставка и оплата</a></li>
+                <li><a class="site-navigation-link" href="about.html">О компании</a></li>
               </ul>
-            </li>
-            <li><a class="site-navigation-link" href="delivery.html">Доставка и оплата</a></li>
-            <li><a class="site-navigation-link" href="about.html">О компании</a></li>
-          </ul>
-        <ul class="user-navigation">
-            <li><a class="user-navigation-link search" href="search.html">Поиск</a>
-              <form action="https://echo.htmlacademy.ru" method="get">
-                <div class="search-popup">
-                  <input type="search" class="search-input" name="search" id="search" placeholder="">
-                  <label class="search-label" for="search">Что ищем?</label>
+            </div>
+            <ul class="user-navigation">
+              <li><a class="user-navigation-link search" href="search.html">Поиск</a>
+                <form action="https://echo.htmlacademy.ru" method="get">
+                  <div class="search-popup">
+                    <input type="search" class="search-input" name="search" id="search" placeholder="">
+                    <label class="search-label" for="search">Что ищем?</label>
+                  </div>
+                </form>
+              </li>
+              <li><a class="user-navigation-link login" href="login.html">Вход</a>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <div class="login-popup">
+                    <p class="login-item">
+                      <input type="email" class="login-input" name="login-email" id="login-email" placeholder="">
+                      <label class="login-label" for="login-email">Электронная почта</label>
+                    </p>
+                    <p class="login-item">
+                      <input type="password" class="login-input" name="login-password" id="login-password" placeholder="">
+                      <label class="login-label" for="login-password">Пароль</label>
+                    </p>
+                    <button class="login-button" type="button">Войти</button>
                 </div>
-              </form>
-            </li>
-            <li><a class="user-navigation-link login" href="login.html">Вход</a>
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <div class="login-popup">
-                  <p class="login-item">
-                    <input type="email" class="login-input" name="login-email" id="login-email" placeholder="">
-                    <label class="login-label" for="login-email">Электронная почта</label>
-                  </p>
-                  <p class="login-item">
-                    <input type="password" class="login-input" name="login-password" id="login-password" placeholder="">
-                    <label class="login-label" for="login-password">Пароль</label>
-                  </p>
-                  <button class="login-button" type="button">Войти</button>
-              </div>
-              </form>
-              <div class="reg-link">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </div>
-            </li>
-            <li><a class="user-navigation-link cart" href="cart.html">2 товара</a>
+                </form>
+                <div class="reg-link">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </li>
+              <li><a class="user-navigation-link cart" href="cart.html">2 товара</a>
           <table class="cart-list">
             <tbody>
               <tr class="cart-item">
@@ -83,17 +85,19 @@
       </nav>
     </div>
   </header>
-  <main class="container">
-    <div class=“container”>
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs-current"><a>Сливочное</a></li>
-      </ul>
-      <p class="contacts">
-        <span class="contacts-time">С 10 до 20, ежедневно</span>
-        <span class="contacts-phone">8 812 450-25-25</span>
-      </p>
+  <main class="main-container">
+    <div class="container">
+      <div class="contacts-row">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs-current"><a>Сливочное</a></li>
+        </ul>
+        <div class="contacts">
+          <p class="contacts-time">С 10 до 20, ежедневно</p>
+          <p class="contacts-phone">8 812 450-25-25</p>
+        </div>
+      </div>
       <h1>Сливочное мороженое</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр мороженого</h2>
@@ -249,7 +253,7 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class=“container”>
+    <div class="container">
       <ul class="social-buttons">
         <li><a class="social-button social-button-twitter" href="#">Twitter</a></li>
         <li><a class="social-button social-button-instagram" href="#">Instagram</a></li>
