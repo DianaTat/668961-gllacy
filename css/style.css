@@ -73,6 +73,7 @@ img {
 .sub-navigation {
     background-color: #f7f6f3;
     text-decoration: none;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 
     position: absolute;
     top: 35px;
@@ -131,21 +132,237 @@ img {
 
     margin: 0;
     margin-left: 10px;
-    padding: 7px 15px;
+    padding: 7px 16px;
     border-radius: 16px;
 }
 
+.user-navigation li {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.search::before {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    content: "";
+
+    background-image: url("../img/loupe.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    width: 17px;
+    height: 17px;
+}
+
+.search:hover::before {
+    background-image: url("../img/loupe-hover.svg");
+}
+
+.user-navigation li:hover .search-popup {
+    display: block;
+}
+
 .search-popup {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    z-index: 1;
+
+    width: 340px;
+    height: 85px;
+    background-color: #f8f7f4;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+    margin: 0;
+    padding: 0;
+
     display: none;
+    box-sizing: border-box;
+}
+
+.search-input {
+    display: inline-block;
+    position: relative;
+
+    width: 309px;
+    min-height: 42px;
+    margin: 20px 15px;
+    padding: 0 10px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.search-label {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+
+    color: #999999;
+}
+
+.search-input:focus ~ .search-label {
+    top: 0;
+    font-size: 12px;
+}
+
+.login {
+    padding-left: 40px;
+}
+
+.login::before {
+    position: absolute;
+    top: 2px;
+    right: 53px;
+    content: "";
+
+    background-image: url("../img/entrance.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    width: 21px;
+    height: 19px;
+}
+
+.login:hover::before {
+    background-image: url("../img/entrance-hover.svg");
 }
 
 .login-popup {
     display: none;
 }
 
-.reg-link {
+.user-navigation li:hover .login-popup {
+    display: flex;
+}
+
+.login-popup {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    z-index: 1;
+
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    width: 278px;
+    height: 215px;
+    background-color: #f8f7f4;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: none;
 }
+
+.login-item {
+    margin: 0;
+    padding: 0;
+}
+
+.login-email-input,
+.login-password-input {
+    display: inline-block;
+    position: relative;
+
+    width: 220px;
+    min-height: 42px;
+    margin: 20px 15px 0px;
+    padding: 0 10px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.login-password-label {
+    position: absolute;
+    bottom: 98px;
+    left: 25px;
+
+    color: #999999;
+}
+
+.login-email-label {
+    position: absolute;
+    top: 32px;
+    left: 25px;
+
+    color: #999999;
+}
+
+.login-password-input:focus ~ .login-password-label{
+    bottom: 128px;
+    font-size: 12px;
+}
+
+.login-email-input:focus ~ .login-email-label  {
+    top: 0;
+    font-size: 12px;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 20px 15px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(to top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    border-radius: 25px;
+}
+
+.reg-link {
+    display: inline-block;
+    width: 122px;
+
+    padding: 20px 0;
+    margin: 0;
+}
+
+.reg-link a {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232;
+    text-decoration: underline;
+}
+
+.cart-empty {
+    padding-left: 40px;
+}
+
+.cart-empty::before {
+    position: absolute;
+    top: 2px;
+    right: 60px;
+    content: "";
+
+    background-image: url("../img/basket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    width: 21px;
+    height: 19px;
+}
+
+.cart-empty:hover::before {
+    background-image: url("../img/basket-hover.svg");
+}
+
 
 .features {
     color: #323232;
