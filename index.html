@@ -21,7 +21,7 @@
             <li><a class="site-navigation-link" href="catalog.html">Каталог</a>
               <ul class="sub-navigation">
                 <li><a class="sub-navigation-link highlight" href="new.html">Новинки</a></li>
-                <li><a class="sub-navigation-link" href="cream.html">Сливочное</a></li>
+                <li><a class="sub-navigation-link" href="catalog.html">Сливочное</a></li>
                 <li><a class="sub-navigation-link" href="sherbet.html">Щербеты</a></li>
                 <li><a class="sub-navigation-link" href="fruit-ice.html">Фруктовый лёд</a></li>
                 <li><a class="sub-navigation-link" href="melorin.html">Мелорин</a></li>
@@ -52,13 +52,13 @@
                   <label class="login-password-label" for="login-password">Пароль</label>
                 </p>
                 <button class="login-button" type="button">Войти</button>
-            
-            <div class="reg-link">
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </div>
-          </div>
-        </form>
+
+                <div class="reg-link">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </div>
+            </form>
           </li>
           <li><a class="user-navigation-link cart-empty">Пусто</a></li>
         </ul>
@@ -111,31 +111,32 @@
     </div>
     <section class="map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="map-row">
+        <section class="address">
+          <p>Адрес главного офиса<br>и офлайн-магазина:<br>
+          <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b></p>
+          <p>Для заказов по телефону:<br>
+          <b>8 812 450-25-25</b><br>
+          (с 10 до 20 ежедневно)</p>
+          <a class="feedback" href="#feedback">Форма обратной связи</a>
+      </section></div>
       <p>
         <img src="img/map.jpg" width="1250" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </p>
-      <section class="address">
-        <p>Адрес главного офиса и офлайн-магазина:</p>
-        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-        <p>Для заказов по телефону:</p>
-        <b>8 812 450-25-25</b>
-        <p>(с 10 до 20 ежедневно)</p>
-        <p><a class="feedback" href="feedback.html">Форма обратной связи</a></p>
-      </section>
+      </p> 
     </section>
   </main>
   <footer class="main-footer">
     <div class="container">
       <ul class="social-buttons">
-        <li><a class="social-button social-button-twitter" href="#">Twitter</a></li>
-        <li><a class="social-button social-button-instagram" href="#">Instagram</a></li>
-        <li><a class="social-button social-button-fb" href="#">Facebook</a></li>
-        <li><a class="social-button social-button-vk" href="#">Vk</a></li>
+        <li><a class="social-button social-button-twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="social-button social-button-instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a class="social-button social-button-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-button social-button-vk" href="#"><span class="visually-hidden">VK</span></a></li>
       </ul>
       <ul class="footer-menu">
         <li class="menu-item menu-item-favourite"><a href="supply.html">Для поставщиков</a></li>
-        <li class="menu-item"><a href="documentation.html">Наши документы</a></li>
-        <li class="menu-item"><a href="payment.html">Счета и оплата</a></li>
+        <li class="menu-item"><a href="about.html">О производстве</a></li>
+        <li class="menu-item"><a href="documentation.html">Документация</a></li>
         <li class="menu-item"><a href="eco-standards.html">Экологические стандарты</a></li>
       </ul>
       <div class="footer-copyright">
@@ -156,15 +157,15 @@
         </p>
         <p class="feedback-item">
           <input type="email" class="feedback-input" name="feedback-email" id="feedback-email" placeholder="">
-          <label for="feedback-email" class="feedback-label">Ваша почта для ответа?</label>
+          <label for="feedback-email" class="feedback-mail-label">Ваша почта для ответа?</label>
         </p>
         <p class="feedback-item">
           <textarea class="feedback-text-input" name="feedback-text" id="feedback-text" placeholder=""></textarea>
-          <label for="feedback-text" class="feedback-label">Напишите что-нибудь...</label>
+          <label for="feedback-text" class="feedback-text-label">Напишите что-нибудь...</label>
         </p>
         <button class="feedback-button">Отправить</button>
       </form>
-    </div>
+    </div
 </body>
 
 </html>
