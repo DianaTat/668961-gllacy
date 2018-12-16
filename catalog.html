@@ -102,7 +102,70 @@
       <h1>Сливочное мороженое</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр мороженого</h2>
-        <!-- Здесь будет форма -->
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-category">
+            <legend>Сортировка:</legend>
+            <select id="sort" class="filter-select">
+              <option value="по популярности">по популярности</option>
+              <option value="по цене">по цене</option>
+            </select>
+          </fieldset>
+          <fieldset class="filter-category">
+            <legend>Цена: 100 руб. – 500 руб.</legend>
+            <input class="filter-range" type="range" min="10" max="800" step="10" value="100">
+          </fieldset>
+          <fieldset class="filter-category">
+            <legend>Жирность:</legend>
+            <div class="filter-input-row">
+              <ul>
+                <li class="filter-input">
+                  <input class="visually-hidden input-radio" name="fat" type="radio" value="0" id="zero">
+                  <label for="zero">0%</label></li>
+                <li class="filter-input">
+                  <input class="visually-hidden input-radio" name="fat" type="radio" value="10" id="ten" checked>
+                  <label for="ten">до 10%</label>
+                </li>
+                <li class="filter-input">
+                  <input class="visually-hidden input-radio" name="fat" type="radio" value="30" id="thirty">
+                  <label for="thirty">до 30%</label></li>
+                <li class="filter-input">
+                  <input class="visually-hidden input-radio" name="fat" type="radio" value="> 30" id="over-thirty">
+                  <label for="over-thirty">выше 30%</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="filter-category">
+            <legend>Наполнители:</legend>
+            <div class="filter-input-row">
+              <ul>
+                <li class="filter-input">
+                  <input class="visually-hidden input-checkbox" type="checkbox" value="шоколадные" id="chocolate"
+                    checked>
+                  <label for="chocolate">шоколадные</label>
+                </li>
+                <li class="filter-input">
+                  <input class="visually-hidden input-checkbox" type="checkbox" value="сахарные присыпки" id="sugar"
+                    checked>
+                  <label for="sugar">сахарные присыпки</label>
+                </li>
+                <li class="filter-input">
+                  <input class="visually-hidden input-checkbox" type="checkbox" value="фрукты" id="fruit">
+                  <label for="fruit">фрукты</label>
+                </li>
+                <li class="filter-input">
+                  <input class="visually-hidden input-checkbox" type="checkbox" value="сиропы" id="syrup">
+                  <label for="syrup">сиропы</label>
+                </li>
+                <li class="filter-input">
+                  <input class="visually-hidden input-checkbox" type="checkbox" value="джемы" id="jam">
+                  <label for="jam">джемы</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <button class="filter-button" type="button" value="Применить">Применить</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список сливочного мороженого</h2>
