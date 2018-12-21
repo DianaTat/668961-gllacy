@@ -35,7 +35,7 @@
           <li><a class="user-navigation-link search" href="search.html"></a>
             <form action="https://echo.htmlacademy.ru" method="get">
               <div class="search-popup">
-                <input type="search" class="search-input" name="search" id="search" placeholder="">
+                <input type="search" class="search-input" name="search" id="search" placeholder=" ">
                 <label class="search-label" for="search">Что ищем?</label>
               </div>
             </form>
@@ -44,12 +44,12 @@
             <form action="https://echo.htmlacademy.ru" method="post">
               <div class="login-popup">
                 <p class="login-item">
-                  <input type="email" class="login-email-input" name="login-email" id="login-email" placeholder="">
+                  <input type="email" class="login-email-input" name="login-email" id="login-email" placeholder=" ">
                   <label class="login-email-label" for="login-email">Электронная почта</label>
                 </p>
                 <p class="login-item">
                   <input type="password" class="login-password-input" name="login-password" id="login-password"
-                    placeholder="">
+                    placeholder=" ">
                   <label class="login-password-label" for="login-password">Пароль</label>
                 </p>
                 <button class="login-button" type="button">Войти</button>
@@ -105,14 +105,21 @@
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-category">
             <legend>Сортировка:</legend>
+            <div class="select-row">
             <select id="sort" class="filter-select">
               <option value="по популярности">по популярности</option>
               <option value="по цене">по цене</option>
-            </select>
+            </select></div>
           </fieldset>
           <fieldset class="filter-category">
             <legend>Цена: 100 руб. – 500 руб.</legend>
-            <input class="filter-range" type="range" min="10" max="800" step="10" value="100">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 10%; width: 60%"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
           </fieldset>
           <fieldset class="filter-category">
             <legend>Жирность:</legend>
