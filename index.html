@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
-  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
   <div class="site-wrapper">
     <header class="main-header">
       <div class="container">
@@ -32,7 +32,7 @@
                 </ul>
               </li>
               <li><a class="site-navigation-link" href="delivery.html">Доставка и оплата</a></li>
-              <li><a class="site-navigation-link" href="about.html">О компании</a></li>
+              <li><a class="site-navigation-link" href="about.html">О Компании</a></li>
             </ul>
           </div>
           <ul class="user-navigation">
@@ -58,10 +58,10 @@
                   </p>
                   <button class="login-button" type="button">Войти</button>
 
-                  <div class="reg-link">
+                  <p class="reg-link">
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
-                  </div>
+                  </p>
                 </div>
               </form>
             </li>
@@ -70,7 +70,7 @@
         </nav>
         <div class="main-contacts-row">
           <p class="contacts">
-            <span class="contacts-time">С 10 до 20, ежедневно</span><br>
+            <span class="contacts-time">С 10 до 20, ежедневно</span>
             <span class="contacts-phone">8 812 450-25-25</span>
           </p>
         </div>
@@ -85,19 +85,19 @@
           <label for="product-3">Третий</label>
         </div>
         <ul class="slider-list">
-          <li class="slider-item slide" id="slide1">
+          <li class="slider-item slide slide1">
             <h3 class="slide-title">
               Крем-брюле и пломбир с малиновым джемом
             </h3>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
-          <li class="slider-item slide" id="slide2">
+          <li class="slider-item slide slide2">
             <h3 class="slide-title">
               Шоколадный пломбир и лимонный сорбет
             </h3>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
-          <li class="slider-item slide" id="slide3">
+          <li class="slider-item slide slide3">
             <h3 class="slide-title">
               Пломбир с помадкой и клубничный щербет
             </h3>
@@ -221,15 +221,15 @@
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5937524884682!2d30.320934315949103!3d59.93888298187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzIwLjAiTiAzMMKwMTknMjMuMiJF!5e0!3m2!1sru!2sru!4v1545332587690"
-          width="1200" height="430" allowfullscreen></iframe>
+          width="1200" allowfullscreen></iframe>
         <div class="map-row">
           <section class="address">
-            <p>Адрес главного офиса<br>и офлайн-магазина:<br>
-              <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b></p>
-            <p>Для заказов по телефону:<br>
-              <b>8 812 450-25-25</b><br>
+            <p>Адрес главного офиса и офлайн-магазина:
+              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+            <p>Для заказов по телефону:
+              <b>8 812 450-25-25</b>
               (с 10 до 20 ежедневно)</p>
-            <a class="feedback" href="#feedback">Форма обратной связи</a>
+            <a class="feedback" href="feedback.html">Форма обратной связи</a>
           </section>
         </div>
       </section>
@@ -244,8 +244,8 @@
         </ul>
         <ul class="footer-menu">
           <li class="menu-item menu-item-favourite"><a href="supply.html">Для поставщиков</a></li>
-          <li class="menu-item"><a href="about.html">О производстве</a></li>
-          <li class="menu-item"><a href="documentation.html">Документация</a></li>
+          <li class="menu-item"><a href="documentation.html">Наши документы</a></li>
+          <li class="menu-item"><a href="production.html">О производстве</a></li>
           <li class="menu-item"><a href="eco-standards.html">Экологические стандарты</a></li>
         </ul>
         <div class="footer-copyright">
@@ -260,7 +260,7 @@
 
   <div class="feedback-popup">
     <h2>Мы обязательно вам ответим!</h2>
-    <button class="popup-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <button class="popup-close-button" type="button" value="Закрыть"></button>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p class="feedback-item">
         <input type="text" class="feedback-input" name="feedback-name" id="feedback-name" placeholder=" ">
@@ -280,7 +280,7 @@
   <div class="popup-background">
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="js/script-min.js"></script>
 
 </body>
 

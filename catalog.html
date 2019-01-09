@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог GllacyShop</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
@@ -28,7 +28,7 @@
               </ul>
             </li>
             <li><a class="site-navigation-link" href="delivery.html">Доставка и оплата</a></li>
-            <li><a class="site-navigation-link" href="about.html">О компании</a></li>
+            <li><a class="site-navigation-link" href="about.html">О Компании</a></li>
           </ul>
         </div>
         <ul class="user-navigation">
@@ -53,10 +53,10 @@
                   <label class="login-password-label" for="login-password">Пароль</label>
                 </p>
                 <button class="login-button" type="button">Войти</button>
-                <div class="reg-link">
+                <p class="reg-link">
                   <a href="#">Забыли пароль?</a>
                   <a href="#">Новая регистрация</a>
-                </div>
+                </p>
               </div>
             </form>
           </li>
@@ -67,15 +67,15 @@
                   <button class="cart-close-button" type="button"><span class="visually-hidden">Удалить товар</span></button>
                   <img src="img/orange.jpg" class="cart-img" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                   <a class="cart-item-link" href="ice-cream.html">Пломбир с апельсиновым джемом</a>
-                  <div class="cart-item-weight">1,5 кг х <span>200 руб.</span></div>
-                  <div class="cart-item-price">300 руб.</div>
+                  <p class="cart-item-weight">1,5 кг х <span>200 руб.</span></p>
+                  <p class="cart-item-price">300 руб.</p>
                 </div>
                 <div class="cart-item">
                   <button class="cart-close-button" type="button"><span class="visually-hidden">Удалить товар</span></button>
                   <img src="img/strawberry.jpg" class="cart-img" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                   <a class="cart-item-link" href="ice-cream.html">Клубничный пломбир с присыпкой из белого шоколада</a>
-                  <div class="cart-item-weight">1,5 кг х <span>300 руб.</span></div>
-                  <div class="cart-item-price">450 руб.</div>
+                  <p class="cart-item-weight">1,5 кг х <span>300 руб.</span></p>
+                  <p class="cart-item-price">450 руб.</p>
                 </div>
               </div>
               <b class="cart-total">Итого: 750 руб.</b>
@@ -95,11 +95,11 @@
           <li class="breadcrumbs-current"><a>Сливочное</a></li>
         </ul>
         <p class="contacts">
-          <span class="contacts-time">С 10 до 20, ежедневно</span><br>
+          <span class="contacts-time">С 10 до 20, ежедневно</span>
           <span class="contacts-phone">8 812 450-25-25</span>
         </p>
       </div>
-      <h1>Сливочное мороженое</h1>
+      <h1 class="page-title">Сливочное мороженое</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр мороженого</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
@@ -146,25 +146,25 @@
             <legend>Наполнители:</legend>
             <div class="filter-input-row">
               <ul>
-                <li class="filter-input">
+                <li class="filter-input checkbox">
                   <input class="visually-hidden input-checkbox" type="checkbox" value="шоколадные" id="chocolate"
                     checked>
                   <label for="chocolate">шоколадные</label>
                 </li>
-                <li class="filter-input">
+                <li class="filter-input checkbox">
                   <input class="visually-hidden input-checkbox" type="checkbox" value="сахарные присыпки" id="sugar"
                     checked>
                   <label for="sugar">сахарные присыпки</label>
                 </li>
-                <li class="filter-input">
+                <li class="filter-input checkbox">
                   <input class="visually-hidden input-checkbox" type="checkbox" value="фрукты" id="fruit">
                   <label for="fruit">фрукты</label>
                 </li>
-                <li class="filter-input">
+                <li class="filter-input checkbox">
                   <input class="visually-hidden input-checkbox" type="checkbox" value="сиропы" id="syrup">
                   <label for="syrup">сиропы</label>
                 </li>
-                <li class="filter-input">
+                <li class="filter-input checkbox">
                   <input class="visually-hidden input-checkbox" type="checkbox" value="джемы" id="jam">
                   <label for="jam">джемы</label>
                 </li>
@@ -332,7 +332,7 @@
       <ul class="footer-menu">
         <li class="menu-item menu-item-favourite"><a href="supply.html">Для поставщиков</a></li>
         <li class="menu-item"><a href="documentation.html">Наши документы</a></li>
-        <li class="menu-item"><a href="payment.html">Счета и оплата</a></li>
+        <li class="menu-item"><a href="production.html">О производстве</a></li>
         <li class="menu-item"><a href="eco-standards.html">Экологические стандарты</a></li>
       </ul>
       <div class="footer-copyright">
