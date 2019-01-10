@@ -868,6 +868,11 @@ img {
   margin: 65px 5px 40px 0;
 }
 
+.address p:first-child {
+  width: 150px;
+  margin-bottom: 0;
+}
+
 .address p {
   font-size: 14px;
   line-height: 20px;
@@ -2180,11 +2185,11 @@ h2 {
 }
 
 .input-radio:focus + label {
-  outline: 2px solid darkgray;
+  outline: 2px solid lightblue;
 }
 
 .input-checkbox:focus + label {
-  outline: 2px solid darkgray;
+  outline: 2px solid lightblue;
 }
 
 .checkbox label {
