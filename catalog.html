@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог GllacyShop</title>
-  <link href="css/style-min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
@@ -61,26 +61,29 @@
             </form>
           </li>
           <li><a class="user-navigation-link cart" href="cart.html">2 товара</a>
-            <div class="cart-list">
-              <div class="cart-items">
-                <div class="cart-item">
-                  <button class="cart-close-button" type="button"><span class="visually-hidden">Удалить товар</span></button>
-                  <img src="img/orange.jpg" class="cart-img" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                  <a class="cart-item-link" href="ice-cream.html">Пломбир с апельсиновым джемом</a>
-                  <p class="cart-item-weight">1,5 кг х <span>200 руб.</span></p>
-                  <p class="cart-item-price">300 руб.</p>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="cart-list">     
+                <div class="cart-items">
+                  <div class="cart-item">
+                    <button class="cart-close-button" type="button"><span class="visually-hidden">Удалить товар</span></button>
+                    <img src="img/orange.jpg" class="cart-img" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    <a class="cart-item-link" href="ice-cream.html">Пломбир с апельсиновым джемом</a>
+                    <p class="cart-item-weight">1,5 кг х <span>200 руб.</span></p>
+                    <p class="cart-item-price">300 руб.</p>
+                  </div>
+                  <div class="cart-item">
+                    <button class="cart-close-button" type="button"><span class="visually-hidden">Удалить товар</span></button>
+                    <img src="img/strawberry.jpg" class="cart-img" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    <a class="cart-item-link" href="ice-cream.html">Клубничный пломбир с присыпкой из белого шоколада</a>
+                    <p class="cart-item-weight">1,5 кг х <span>300 руб.</span></p>
+                    <p class="cart-item-price">450 руб.</p>
+                  </div>
                 </div>
-                <div class="cart-item">
-                  <button class="cart-close-button" type="button"><span class="visually-hidden">Удалить товар</span></button>
-                  <img src="img/strawberry.jpg" class="cart-img" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                  <a class="cart-item-link" href="ice-cream.html">Клубничный пломбир с присыпкой из белого шоколада</a>
-                  <p class="cart-item-weight">1,5 кг х <span>300 руб.</span></p>
-                  <p class="cart-item-price">450 руб.</p>
-                </div>
-              </div>
-              <b class="cart-total">Итого: 750 руб.</b>
-              <a class="cart-button" href="cart.html">Оформить заказ</a>
+                <b class="cart-total">Итого: 750 руб.</b>
+                <button class="cart-button">Оформить заказ</button>
+              
             </div>
+          </form>
           </li>
         </ul>
       </nav>
@@ -106,10 +109,10 @@
           <fieldset class="filter-category">
             <legend>Сортировка:</legend>
             <div class="select-row">
-            <select id="sort" class="filter-select">
-              <option value="по популярности">по популярности</option>
-              <option value="по цене">по цене</option>
-            </select></div>
+              <select id="sort" class="filter-select">
+                <option value="по популярности">по популярности</option>
+                <option value="по цене">по цене</option>
+              </select></div>
           </fieldset>
           <fieldset class="filter-category">
             <legend>Цена: 100 руб. – 500 руб.</legend>

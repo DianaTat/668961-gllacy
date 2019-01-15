@@ -852,6 +852,7 @@ img {
   position: absolute;
   top: 0;
   z-index: 1;
+  border: 0;
 }
 
 .address {
@@ -1090,9 +1091,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;
   margin-top: 18px;
   padding-bottom: 20px;
 }
@@ -1134,18 +1135,19 @@ img {
 
   margin: 0;
   margin-right: 12px;
+  margin-bottom: 12px;
   padding: 0;
 
-  width: 32px;
-  height: 32px;
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 19px;
+  width: 30px;
+  height: 30px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 32px;
 }
 
 .social-button-twitter {
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: -1px -1px;
 }
 
 .social-button-twitter:hover {
@@ -1155,7 +1157,7 @@ img {
 .social-button-instagram {
   background-image: url("../img/instagram.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: -1px -1px;
 }
 
 .social-button-instagram:hover {
@@ -1165,7 +1167,7 @@ img {
 .social-button-fb {
   background-image: url("../img/fb.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: -1px -1px;
 }
 
 .social-button-fb:hover {
@@ -1175,7 +1177,7 @@ img {
 .social-button-vk {
   background-image: url("../img/vk.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: -1px -1px;
 }
 
 .social-button-vk:hover {
@@ -1183,8 +1185,6 @@ img {
 }
 
 .footer-menu {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
 
@@ -1839,14 +1839,6 @@ h2 {
 }
 
 .cart-close-button {
-  display: inline-block;
-  vertical-align: middle;
-
-  background-image: url("../img/cross-small.svg");
-  background-color: #f8f7f4;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
   border: 0;
   cursor: pointer;
 
@@ -1856,6 +1848,13 @@ h2 {
   margin: 0;
   padding: 0;
   margin-right: 14px;
+  
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/cross-small.svg");
+  background-color: #f8f7f4;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .cart-img {
