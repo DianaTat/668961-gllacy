@@ -66,6 +66,7 @@ body {
 
 .button {
   display: inline-block;
+  vertical-align: top;
   padding: 12px 44px;
 
   font-weight: 600;
@@ -73,7 +74,6 @@ body {
   line-height: 41px;
   text-align: center;
   color: #ffffff;
-  vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
@@ -119,11 +119,11 @@ body {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
+
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
-  vertical-align: top;
 
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -376,7 +376,8 @@ img {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .search-label {
@@ -444,7 +445,7 @@ img {
       align-content: flex-start;
 
   width: 278px;
-  height: 215px;
+  min-height: 215px;
   background-color: #f8f7f4;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -482,7 +483,7 @@ img {
 
 .login-password-label {
   position: absolute;
-  bottom: 98px;
+  top: 95px;
   left: 25px;
 
   color: #999999;
@@ -497,7 +498,7 @@ img {
 }
 
 .login-password-input:focus~.login-password-label {
-  bottom: 128px;
+  top: 65px;
   font-size: 12px;
 }
 
@@ -515,6 +516,8 @@ img {
 }
 
 .login-button {
+  height: 46px;
+
   display: inline-block;
   vertical-align: middle;
   padding: 12px 28px;
@@ -1116,6 +1119,7 @@ img {
   padding: 0;
   padding-bottom: 5px;
   margin: 0;
+  margin-top: 20px;
 
   display: -webkit-box;
 
@@ -1134,12 +1138,12 @@ img {
   vertical-align: middle;
 
   margin: 0;
-  margin-right: 12px;
-  margin-bottom: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   padding: 0;
 
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
   border: 5px solid rgba(255, 255, 255, 0.5);
   border-radius: 32px;
 }
@@ -1200,9 +1204,10 @@ img {
           justify-content: flex-start;
 
   min-height: 50px;
-  width: 370px;
+  width: 375px;
   padding: 0;
   margin: 0;
+  margin-top: 15px;
 
   -webkit-box-sizing: border-box;
 
@@ -1844,15 +1849,24 @@ h2 {
 
   width: 11px;
   height: 11px;
+  background-color: #f8f7f4;
 
   margin: 0;
   padding: 0;
   margin-right: 14px;
-  
-  display: inline-block;
-  vertical-align: middle;
+  position: relative;
+}
+
+.cart-close-button:before {
+  content: "";
+  position: absolute; 
+  z-index: 2;
+  top: 0;
+
+  width: 11px;
+  height: 11px;
+
   background-image: url("../img/cross-small.svg");
-  background-color: #f8f7f4;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2083,7 +2097,10 @@ h2 {
   display: -ms-flexbox;
 
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
 }
 
@@ -2130,6 +2147,11 @@ h2 {
   color: #fff;
 }
 
+.input-checkbox:disabled + label,
+.input-radio:disabled + label {
+  color: rgba(255, 255, 255, .4);
+}
+
 .filter-input:last-child {
   margin-right: 10px;
 }
@@ -2167,6 +2189,10 @@ h2 {
   border: 4px solid #fff;
 }
 
+.input-radio:disabled + label::before {
+  border: 4px solid rgba(255, 255, 255, .4);
+}
+
 .input-radio:checked + label::after {
   content: "";
 
@@ -2183,6 +2209,10 @@ h2 {
 
 .input-radio:checked:hover + label::after {
   background-color: #fff;
+}
+
+.input-radio:checked:disabled + label::after {
+  background-color: rgba(255, 255, 255, .4);
 }
 
 .input-radio:focus + label {
@@ -2215,6 +2245,10 @@ h2 {
   border: 2px solid #fff;
 }
 
+.input-checkbox:disabled + label::before {
+  border: 2px solid rgba(255, 255, 255, .4);
+}
+
 .input-checkbox:checked + label::after {
   content: "";
 
@@ -2225,12 +2259,20 @@ h2 {
 
   width: 22px;
   height: 18px;
+  border: 0;
 
   background-image: url("../img/checkbox-on.svg");
+  border: 0;
 }
 
 .input-checkbox:checked:hover + label::after {
   background-image: url("../img/checkbox-on-hover.svg");
+  border: 0;
+}
+
+.input-checkbox:checked:disabled + label::after {
+  background-image: url("../img/checkbox-on-disabled.svg");
+  border: 0;
 }
 
 .filter-select {
@@ -2319,11 +2361,10 @@ h2 {
 .range-controls .toggle {
   position: absolute;
   top: 8px;
-  left: 0;
 
   border: 8px solid #fff;
-  height: 3px;
-  width: 3px;
+  height: 4px;
+  width: 4px;
   border-radius: 50%;
   background: #ababab;
   cursor: pointer;
@@ -2333,8 +2374,20 @@ h2 {
   left: 35px;
 }
 
+.toggle-min:hover {
+  top: 7px;
+  left: 34px;
+  border: 9px solid #fff;
+}
+
 .range-controls .toggle-max {
   left: 130px;
+}
+
+.toggle-max:hover {
+  top: 7px;
+  left: 129px;
+  border: 9px solid #fff;
 }
 
 .filter-button {
