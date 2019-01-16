@@ -132,7 +132,11 @@ body {
 }
 
 .slider-controls label:hover {
-  background-color: rgba(255, 255, 255, .4)
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.slider-controls label:active {
+  background-color: #ffffff;
 }
 
 .slide {
@@ -378,6 +382,15 @@ img {
   line-height: inherit;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.search-input:hover,
+.login-email-input:hover,
+.login-password-input:hover,
+.subscribe-input:hover,
+.feedback-input:hover,
+.feedback-text-input:hover {
+  outline: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .search-label {
@@ -701,7 +714,7 @@ img {
   color: #323232;
   background-color: #ffffff;
   background-image: url("../img/news-bg.jpg");
-  background-position: 0 0;
+  background-position: -52px -225px;
   background-repeat: no-repeat;
   border-radius: 15px;
 }
@@ -732,6 +745,7 @@ img {
   padding: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: flex;
 }
 
 .subscribe-form {
@@ -742,6 +756,9 @@ img {
 
   display: inline-block;
   vertical-align: middle;
+}
+
+.subscribe-row {
   position: relative;
 }
 
@@ -783,16 +800,16 @@ img {
   line-height: 24px;
   font-weight: 400;
   position: absolute;
-  top: 140px;
-  left: 35px;
+  top: 10px;
+  left: 15px;
 
   margin: 0;
   padding: 0;
 }
 
 .subscribe-input:focus~.subscribe-label {
-  top: 115px;
-  left: 35px;
+  top: -20px;
+  left: 15px;
   font-size: 12px;
 }
 
@@ -1142,16 +1159,21 @@ img {
   margin-bottom: 10px;
   padding: 0;
 
-  width: 29px;
-  height: 29px;
-  border: 5px solid rgba(255, 255, 255, 0.5);
-  border-radius: 32px;
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:active {
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-button-twitter {
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
-  background-position: -1px -1px;
+  background-position: 0 0;
 }
 
 .social-button-twitter:hover {
@@ -1161,7 +1183,7 @@ img {
 .social-button-instagram {
   background-image: url("../img/instagram.svg");
   background-repeat: no-repeat;
-  background-position: -1px -1px;
+  background-position: 0 0;
 }
 
 .social-button-instagram:hover {
@@ -1171,7 +1193,7 @@ img {
 .social-button-fb {
   background-image: url("../img/fb.svg");
   background-repeat: no-repeat;
-  background-position: -1px -1px;
+  background-position: 0 0;
 }
 
 .social-button-fb:hover {
@@ -1181,7 +1203,7 @@ img {
 .social-button-vk {
   background-image: url("../img/vk.svg");
   background-repeat: no-repeat;
-  background-position: -1px -1px;
+  background-position: 0 0;
 }
 
 .social-button-vk:hover {
@@ -1473,7 +1495,7 @@ h2 {
           transform: translate(-50%, -50%);
   z-index: 100;
   width: 476px;
-  height: 442px;
+  min-height: 442px;
   padding: 23px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2259,11 +2281,14 @@ h2 {
   left: 0;
   top: -1px;
 
-  width: 22px;
-  height: 18px;
+  width: 26px;
+  height: 23px;
   border: 0;
 
   background-image: url("../img/checkbox-on.svg");
+}
+
+.input-checkbox:checked + label::before {
   border: 0;
 }
 
