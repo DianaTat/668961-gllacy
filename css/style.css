@@ -139,6 +139,10 @@ body {
   background-color: #ffffff;
 }
 
+.slider-controls label:focus {
+  outline: 2px solid gray;
+}
+
 .slide {
   display: none;
 }
@@ -2240,11 +2244,11 @@ h2 {
 }
 
 .input-radio:focus + label {
-  outline: 2px solid lightblue;
+  outline: 2px solid gray;
 }
 
 .input-checkbox:focus + label {
-  outline: 2px solid lightblue;
+  outline: 2px solid gray;
 }
 
 .checkbox label {
